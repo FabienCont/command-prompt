@@ -1,0 +1,84 @@
+.container-cmd{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  position: absolute;
+  transform: translateX(50%) ;
+}
+
+.container-layout-cmd{
+  min-height:30px;
+  width: 350px;
+  border: 1px solid rgb(4, 145, 218);;
+  background-color: #FFFFFF55;
+  z-index:1000;
+  opacity:0;
+  transform: translateY(50%) ;
+}
+
+
+.container-cmd-show{
+
+  transition: transform  0.9s ease-in;
+  transform: translateX(0) ;
+
+}
+
+.container-cmd-show {
+  .container-layout-cmd{
+    opacity:1;
+    transition: transform  1s ease-out;
+    transform: translateY(0) ;
+  }
+}
+
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateX(100px);
+  }
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-100px);
+  }
+}
+
+.cmd-header{
+  height: 2rem ;
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.cmd-img{
+  height: 15px;
+  width: 15px;
+  margin: 0 5px ;
+}
+.cmd-title-header{
+  font-family: arial;
+  font-size: 0.75rem;
+}
+.cmd-header-icons{
+  margin-right: 1rem;
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex:1;
+}
+
+.cmd-header-icon{
+  margin-left:1rem;
+}
+
+
+.cmd-content{
+  background-color:black;
+  min-height:150px;
+  overflow-y: scroll;
+}

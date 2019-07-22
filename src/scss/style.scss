@@ -1,0 +1,30 @@
+@import "cmd.scss";
+@import "svg.scss";
+
+html,body{
+  background-color: black;
+  margin:0; padding:0;
+  height: 100%;
+}
+
+p{
+  color:white;
+  font-size: 1.2rem;
+  font-family: 'Gamja Flower', cursive;
+}
+.container{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.prompt{
+    animation: prompt 0.5s infinite;
+    animation-direction: alternate;
+}
+@keyframes prompt {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
